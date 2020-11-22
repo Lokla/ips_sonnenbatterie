@@ -1,0 +1,25 @@
+{
+  "elements":
+  [
+	{"type": "Label", "label": "Sonnenbatterie Abfrage"},
+	{"type": "Label", "label": "IP to Sonnenbatterie" },
+	{"type": "ValidationTextBox", "name": "IP", "caption": "IP" },
+	{"type": "Label", "label": "API Key from Dashboard" },
+	{"type": "ValidationTextBox", "name": "APIKey", "caption": "API Key" },
+	{"type": "Label", "label": "Update interval in seconds" },
+    {"type": "IntervalBox", "name": "Interval", "caption": "Seconds" },
+	{"type": "Label", "label": "Optionale Werte" },
+    {"type": "CheckBox", "name": "SaveSums", "caption": "Tagessummen berechnen"},
+    {"type": "CheckBox", "name": "GetStatus", "caption": "Batterie Status auslesen"}
+  ],
+ "actions":
+  [ 
+	{ "type": "Button", "label": "Update Values", "onClick": "SBAT_UpdateBatteryValues($id);" }
+  ],
+  "status":
+  [
+	{ "code": 101, "icon": "active", "caption": "Instance getting created!" },
+	{ "code": 102, "icon": "active", "caption": "Instance is active!" },
+	{ "code": 104, "icon": "inactive", "caption": "Instance is inactive!" }
+  ]
+}

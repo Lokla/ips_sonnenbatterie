@@ -1,0 +1,14 @@
+{
+	"id": "{49DC3885-CC26-C3DB-4028-524823118749}",
+	"name": "Sonnenbatterie",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Sonnenbatterie"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "SBAT"
+}
