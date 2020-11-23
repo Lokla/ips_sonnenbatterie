@@ -1,16 +1,16 @@
 {
   "elements":
   [
-	{"type": "Label", "label": "Sonnenbatterie Abfrage"},
-	{"type": "Label", "label": "IP to Sonnenbatterie" },
+	{"type": "Label", "label": "Sonnenbatterie API"},
+	{"type": "Label", "label": "IP of Sonnenbatterie" },
 	{"type": "ValidationTextBox", "name": "IP", "caption": "IP" },
 	{"type": "Label", "label": "API Key from Dashboard" },
 	{"type": "ValidationTextBox", "name": "APIKey", "caption": "API Key" },
 	{"type": "Label", "label": "Update interval in seconds" },
     {"type": "IntervalBox", "name": "Interval", "caption": "Seconds" },
-	{"type": "Label", "label": "Optionale Werte" },
-    {"type": "CheckBox", "name": "SaveSums", "caption": "Tagessummen berechnen"},
-    {"type": "CheckBox", "name": "GetStatus", "caption": "Batterie Status auslesen"}
+	{"type": "Label", "label": "Optional Values" },
+    {"type": "CheckBox", "name": "SaveSums", "caption": "Generate daily sums"},
+    {"type": "CheckBox", "name": "GetStatus", "caption": "Retrieve battery status"}
   ],
  "actions":
   [ 
