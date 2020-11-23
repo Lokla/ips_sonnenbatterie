@@ -1,4 +1,4 @@
-<?
+<?php
 class Sonnenbatterie extends IPSModule
    {
       public function Create()
@@ -127,14 +127,15 @@ class Sonnenbatterie extends IPSModule
             }
             
             // Compute daily values
+            $devider = 3600 / $this->ReadPropertyInteger("Interval");
             // Consumption
-            $value = floatval($this->FixupInvalidValue($data->Consumption_W)) / 1000.0 / 720.0;
+            $value = floatval($this->FixupInvalidValue($data->Consumption_W)) / 1000.0 / $devider;
             $value = $value + GetValue($this->GetIDForIdent("Consumption_Today"));
             $this->SendDebug("SBAT Update", "New Value for Consumption $value", 0);
             SetValue($this->GetIDForIdent("Consumption_Today"), $value); 
             
             // GridFeed
-            $value = floatval($this->FixupInvalidValue($data->GridFeedIn_W)) / 1000.0 / 720.0;
+            $value = floatval($this->FixupInvalidValue($data->GridFeedIn_W)) / 1000.0 / $devider;
             if ($value < 0) {
                $value = (-1.0 * $value) + GetValue($this->GetIDForIdent("GridFeedIn_Today"));
                SetValue($this->GetIDForIdent("GridFeedIn_Today"), $value);
@@ -146,7 +147,7 @@ class Sonnenbatterie extends IPSModule
             }
             
             // Production
-            $value = floatval($this->FixupInvalidValue($data->Production_W)) / 1000.0 / 720.0;
+            $value = floatval($this->FixupInvalidValue($data->Production_W)) / 1000.0 / $devider;
             $value = $value + GetValue($this->GetIDForIdent("Production_Today"));
             SetValue($this->GetIDForIdent("Production_Today"), $value); 
          }
