@@ -1,0 +1,20 @@
+{
+	"translations": {
+		"de": { 
+			"Sonnenbatterie API": "Sonnenbatterie Abfrage",
+			"IP of Sonnenbatterie": "IP der Sonnenbatterie",
+			"IP" : "IP",
+			"API Key from Dashboard": "API Key vom Dashboard",
+			"API Key": "API Key",
+			"Update interval in seconds": "Update Interval in Sekunden",
+			"Seconds": "Sekunden",
+			"Optional Values": "Optionale Werte",
+			"Generate daily sums": "Tageswerte berechnen",
+			"Retrieve battery status": "Batterie Status auslesen",
+			"Update Values": "Werte aktualisieren",
+			"Instance getting created!": "Instanz wird erstellt!",
+			"Instance is active!": "Instanz ist aktiv!",
+			"Instance is inactive!": "Instanz ist inaktiv"
+		}
+	}
+}
