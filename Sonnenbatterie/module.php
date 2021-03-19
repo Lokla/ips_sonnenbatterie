@@ -83,7 +83,7 @@ class Sonnenbatterie extends IPSModule
              'http'=> array(
                  'method'=>"GET",
                  'max_redirects'=>1,
-                 'header'=>"Auth-Token: fcee7300-908a-4307-b326-f16085b36110"
+                 'header'=>"Auth-Token: $api"
              )
          );
 
